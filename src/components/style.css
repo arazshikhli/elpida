@@ -1,0 +1,21 @@
+.hoverText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(201, 201, 201, 0.8); /* Полупрозрачный фон */
+  color: black;
+  padding: 10px;
+  text-align: center;
+  opacity: 0; /* Изначально скрыт */
+  transition: opacity 0.3s ease-in-out; /* Плавное появление */
+}
+
+/* Добавьте этот стиль для видимости при клике */
+.hoverText.show {
+  opacity: 1; /* Показываем текст при клике */
+}
